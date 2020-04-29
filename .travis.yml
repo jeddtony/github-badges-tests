@@ -1,13 +1,10 @@
 language: php
- 
-php: 
- 	- 7.1
- 	- 7.2 
- 	- 7.3 
+php:
+  - '7.1'
+  - '7.2'
+  - '7.3'
+  - hhvm # on Trusty only
+	- nightly
 
-
-before_script:
- 	- travis_retry composer update
- 
-script: 
- 	- vendor/bin/phpunit
+before_script: travis_retry composer update
+script: vendor/bin/phpunit
