@@ -25,4 +25,14 @@ class ExampleTest extends TestCase
     {
         $this->assertFalse(false);
     }
+
+      /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function testThirdBasicTest()
+    {
+        $this->assertFalse(false);
+    }
 }
